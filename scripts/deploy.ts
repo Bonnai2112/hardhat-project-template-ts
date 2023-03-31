@@ -1,7 +1,7 @@
 import hre, { ethers } from "hardhat";
 
 async function main() {
-  const contract = await ethers.deployContract("Greeter", ["Hello, Hardhat!"]);
+  const contract = await ethers.deployContract("ERC4907", ["NEMEOS NFT", "NEMS"]);
 
   await contract.deployed();
 
